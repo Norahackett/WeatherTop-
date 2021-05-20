@@ -1,0 +1,73 @@
+<section class="ui segment" action="/stations/${_station.id}/addlatestreadings" method="POST">
+    <div class="ui five inverted stackable cards">
+        <div class="card">
+            <div class="extra">
+                <h3 class="header">
+                    ${_station.name} <i class=" right floated map marker icon large purple"></i>
+                </h3>
+                <h4>
+                    Lat: ${_station.latitude}
+                    <br>
+                    Lng: ${_station.longitude}
+                </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h3 class="header">
+                    Weather <i class="right floated cloud sun icon large red"></i>
+                </h3>
+                <h4 class="header"> ${_station.latestWeather}
+                </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h3 class="header">
+                    Temp <i class="right floated temperature high icon large blue"></i>
+                </h3>
+                <h4 class="header">
+                    ${_station.latestTemperature} C
+                    <br>
+                    ${_station.latestTemperatureF} F
+                    <br>
+                    Max: ${_station.maxTempReading}
+                    <br>
+                    Min: ${_station.minTempReading}
+                </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h3 class="header">
+                    Wind <i class="right floated wind icon green extra large"></i>
+                </h3>
+                <h4 class="header">
+                    ${_station.wind} bft
+                    <br>
+                    ${_station.windDirection}
+                    <br>
+                    Feels like: ${_station.windChill}
+                    <br>
+                    Max: ${_station.maxWindReading}
+                    <br>
+                    Min: ${_station.minWindReading}
+                </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h3 class="header">
+                    Pressure <i class="right floated arrows alternate icon orange extra large"></i>
+                </h3>
+                <h4 class="header">
+                    ${_station.latestPressure} hpa
+                    <br>
+                    Max: ${_station.maxPressureReading}
+                    <br>
+                    Min: ${_station.minPressureReading}
+                </h4>
+            </div>
+        </div>
+    </div>
+</section>
