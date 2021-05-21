@@ -31,13 +31,13 @@ public class Station extends Model {
   public int latestPressure;
   public double minPressureReading;
   public double maxPressureReading;
-  public Object latestWeather;
   public double minWindReading;
   public double maxWindReading;
   public double latestwindSpeed;
   public double windChill;
   public double wind;
   public String windDirection;
+  public String latestWeather;
 
 
   public Station(String name, double latitude, double longitude) {

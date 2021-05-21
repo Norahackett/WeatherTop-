@@ -168,19 +168,4 @@ public class StationAnalytics {
     return weatherIcons.get(code);
   }
 
-
- // public static Object Weather(int code) {
-
-
-   // switch (code) {
-     // case 100:
-     //   return "src/1.pjg";
-     // case 200:
-     //   return "src/2. pjg";
-     // case 300:
-     //   return "src/3.pjg";
-     // default:
-     //   return null;
-   // }
-  //}
 }
