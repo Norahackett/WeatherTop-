@@ -31,7 +31,7 @@ public class Station extends Model {
   public int latestPressure;
   public double minPressureReading;
   public double maxPressureReading;
-  public String latestWeather;
+  public Object latestWeather;
   public double minWindReading;
   public double maxWindReading;
   public double latestwindSpeed;

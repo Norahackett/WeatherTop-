@@ -1,13 +1,13 @@
 package utils;
 
 import models.Reading;
-import models.Station;
 
-import javax.swing.*;
 import java.util.HashMap;
 import java.util.List;
 
 public class StationAnalytics {
+
+  private static int WeatherIcon;
 
   public static double getminTemp(List<Reading> readings) {
     Reading minTempReading = null;
@@ -154,7 +154,7 @@ public class StationAnalytics {
   }
 
   public static String weatherIcon(int code) {
-    HashMap<Integer, String > weatherIcons;
+    HashMap<Integer, String> weatherIcons;
     weatherIcons = new HashMap<Integer, String>();
     weatherIcons.put(100, "Clear");
     weatherIcons.put(200, "Partial Clouds");
@@ -165,6 +165,22 @@ public class StationAnalytics {
     weatherIcons.put(600, "Rain");
     weatherIcons.put(700, "snow");
     weatherIcons.put(800, "Thunder");
-       return weatherIcons.get(code);
+    return weatherIcons.get(code);
+  }
+
+
+  public static Object Weather(int code) {
+
+
+    switch (code) {
+      case 100:
+        return "src/1.pjg";
+      case 200:
+        return "src/2. pjg";
+      case 300:
+        return "src/3.pjg";
+      default:
+        return null;
+    }
   }
 }
