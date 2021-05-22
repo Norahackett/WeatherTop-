@@ -25,8 +25,6 @@ public class Member extends Model {
     this.password = password;
   }
 
-
-
   public static Member findByEmail(String email) {
     return find("email", email).first();
   }
