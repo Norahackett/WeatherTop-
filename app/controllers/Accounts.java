@@ -20,19 +20,19 @@ public class Accounts extends Controller {
     redirect("/");
   }
 
- // public static void authenticate(String email, String password) {
-   // Logger.info("Attempting to authenticate with " + email + ":" + password);
+  public static void authenticate(String email, String password) {
+    Logger.info("Attempting to authenticate with " + email + ":" + password);
 
-    //Member member = Member.findByEmail(email);
-   // if ((member != null) && (member.checkPassword(password) == true)) {
-   //   Logger.info("Authentication successful");
-     // session.put("logged_in_Memberid", member.id);
-    //  redirect("/dashboard");
-   // } else {
-    //  Logger.info("Authentication failed");
-     // redirect("/login");
-    //}
- // }
+    Member member = Member.findByEmail(email);
+    if ((member != null) && (member.checkPassword(password) == true)) {
+      Logger.info("Authentication successful");
+      session.put("logged_in_Memberid", member.id);
+      redirect("/dashboard");
+    } else {
+      Logger.info("Authentication failed");
+      redirect("/login");
+    }
+  }
 
   public static void logout() {
     session.clear();
