@@ -135,7 +135,7 @@ public class StationCtrl extends Controller {
         reading.delete();
         Logger.info("Removing" + reading.code);
 
-        render("station.html", station);
+        redirect("/stations/" + id);
     }
 
     public static void addlatestReading(Long id, int code, double temperature, double windSpeed, int pressure, int windDirection) {
