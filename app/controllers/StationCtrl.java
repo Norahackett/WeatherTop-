@@ -130,10 +130,10 @@ public class StationCtrl extends Controller {
     public static void deletereading(Long id, Long readingid) {
         Station station = Station.findById(id);
         Reading reading = Reading.findById(readingid);
-        Logger.info("Removing" + reading.code);
         station.readings.remove(reading);
         station.save();
         reading.delete();
+        Logger.info("Removing" + reading.code);
 
         render("station.html", station);
     }
@@ -144,6 +144,7 @@ public class StationCtrl extends Controller {
         Station station = Station.findById(id);
         station.readings.add(reading);
         station.save();
+        reading.delete();
         redirect("/stations/" + id);
 
     }
