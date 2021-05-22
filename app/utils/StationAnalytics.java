@@ -153,19 +153,20 @@ public class StationAnalytics {
     return maxWindReading.windSpeed;
   }
 
-  //public static String weatherIcon(int code) {
-    //HashMap<Integer, String> weatherIcons;
-    //weatherIcons = new HashMap<Integer, String>();
-    //weatherIcons.put(100, "sun icon");
-    //weatherIcons.put(200, "Partial Clouds");
-    //weatherIcons.put(300, "Cloudy ");
-    //weatherIcons.put(400, "Light Showers");
-    //weatherIcons.put(500, "Heavy Showers");
-    //weatherIcons.put(500, "Heavy Rain ");
-    //weatherIcons.put(600, "Rain");
-    //weatherIcons.put(700, "snow");
-    //weatherIcons.put(800, "Thunder");
-    //return weatherIcons.get(code);
+  public static String weatherIcon(int code) {
+    HashMap<Integer, String> weatherIcons;
+    weatherIcons = new HashMap<Integer, String>();
+    weatherIcons.put(100, "sun icon");
+    weatherIcons.put(200, "Partial Clouds");
+    weatherIcons.put(300, "Cloudy ");
+    weatherIcons.put(400, "Light Showers");
+    weatherIcons.put(500, "Heavy Showers");
+    weatherIcons.put(500, "Heavy Rain ");
+    weatherIcons.put(600, "Rain");
+    weatherIcons.put(700, "snow");
+    weatherIcons.put(800, "Thunder");
+    return weatherIcons.get(code);
+  }
  // }
 
   //public static String weatherIcon(int code) {
