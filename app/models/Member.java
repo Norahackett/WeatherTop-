@@ -1,5 +1,6 @@
 package models;
 
+import models.Station;
 import play.db.jpa.Model;
 
 import javax.persistence.CascadeType;
@@ -33,4 +34,3 @@ public class Member extends Model {
     return this.password.equals(password);
   }
 }
-
