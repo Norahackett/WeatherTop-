@@ -153,41 +153,41 @@ public class StationAnalytics {
     return maxWindReading.windSpeed;
   }
 
-  // public static String weatherIcon(int code) {
-  //  HashMap<Integer, String> weatherIcons;
-  //  weatherIcons = new HashMap<Integer, String>();
-  // weatherIcons.put(100, "Clear");
-  // weatherIcons.put(200, "Partial Clouds");
-  //weatherIcons.put(300, "Cloudy ");
-  // weatherIcons.put(400, "Light Showers");
-  // weatherIcons.put(500, "Heavy Showers");
-  //weatherIcons.put(500, "Heavy Rain ");
-  //weatherIcons.put(600, "Rain");
-  //weatherIcons.put(700, "snow");
-  //weatherIcons.put(800, "Thunder");
-  //return weatherIcons.get(code);
-  //}
-
-  public static String weatherIcon(int code) {
-    switch (code) {
-      case 100:
-        return "sun icon";
-      case 200:
-        return "cloud icon";
-      case 300:
-        return "rain icon";
-      case 400:
-        return "Light Showers";
-      case 500:
-        return "Heavy Showerss";
-      case 600:
-        return "Rain";
-      case 700:
-        return "snow";
-      case 800:
-        return "Thunder";
-    }
-    return weatherIcon(code);
-
+   public static String weatherIcon(int code) {
+    HashMap<Integer, String> weatherIcons;
+    weatherIcons = new HashMap<Integer, String>();
+   weatherIcons.put(100, "Clear");
+   weatherIcons.put(200, "Partial Clouds");
+  weatherIcons.put(300, "Cloudy ");
+   weatherIcons.put(400, "Light Showers");
+   weatherIcons.put(500, "Heavy Showers");
+  weatherIcons.put(500, "Heavy Rain ");
+  weatherIcons.put(600, "Rain");
+  weatherIcons.put(700, "snow");
+  weatherIcons.put(800, "Thunder");
+  return weatherIcons.get(code);
   }
+
+  //public static String weatherIcon(int code) {
+   // switch (code) {
+   //   case 100:
+     //   return "sun icon";
+     // case 200:
+    //    return "cloud icon";
+    //  case 300:
+    //    return "rain icon";
+    //  case 400:
+    //    return "Light Showers";
+    //  case 500:
+    //    return "Heavy Showerss";
+     // case 600:
+     //   return "Rain";
+     // case 700:
+     //   return "snow";
+      //case 800:
+        //return "Thunder";
+    //}
+   // return weatherIcon(code);
+
+ //}
 }
