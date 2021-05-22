@@ -14,7 +14,7 @@ import java.util.Comparator;
 import java.util.Date;
 
 
-import static utils.StationAnalytics.weatherIcon;
+//import static utils.StationAnalytics.weatherIcon;
 
 
 public class StationCtrl extends Controller {
@@ -40,7 +40,7 @@ public class StationCtrl extends Controller {
             station.latestwindSpeed = StationAnalytics.getlatestwindSpeed(station.readings);
             station.minPressureReading = StationAnalytics.getminPressure(station.readings);
             station.maxPressureReading = StationAnalytics.getmaxPressure(station.readings);
-            station.latestWeather = weatherIcon(StationAnalytics.getlatestWeather(station.readings));
+           // station.latestWeather = weatherIcon(StationAnalytics.getlatestWeather(station.readings));
             station.minWindReading = StationAnalytics.getminWind(station.readings);
             station.maxWindReading = (StationAnalytics.getmaxWind(station.readings));
             station.windChill = Math.round((13.12 + 0.6215 * station.latestTemperature - 11.37 * Math.pow(station.latestwindSpeed, 0.16) + 0.3965 * station.latestTemperature * Math.pow(station.latestwindSpeed, 0.16))*100.00)/100.00;
