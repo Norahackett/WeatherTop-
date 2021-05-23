@@ -184,6 +184,8 @@ public class StationAnalytics {
         return "Snow";
       case 800:
         return "Thunder";
+      case 0:
+        return "No Reading";
     }
     return weatherCode(code);
 
