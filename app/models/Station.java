@@ -39,8 +39,6 @@ public class Station extends Model {
   public String windDirection;
   public String latestWeather;
   public String latestWeatherCode;
-  //public String latestWeather;
-
 
   public Station(String name, double latitude, double longitude) {
     this.name = name;
@@ -49,15 +47,12 @@ public class Station extends Model {
   }
 
   public double getWindChill() {
-
     return windChill;
   }
 
   public void setWindChill(double windChill) {
     this.windChill = windChill;
   }
-
-
   public String getName() {
     return name;
   }
