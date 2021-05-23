@@ -35,8 +35,8 @@ public class StationCtrl extends Controller {
         if (station.readings.size() > 0) {
             station.minTempReading = StationAnalytics.getminTemp(station.readings);
             station.maxTempReading = StationAnalytics.getmaxTemp(station.readings);
-            station.latestTemperature =StationAnalytics.getlatestTemp(station.readings);
-            station.latestTemperatureF = StationAnalytics.getlatestTempF(station.readings);
+            station.latestTemperature =toTwoDecimalPlaces(StationAnalytics.getlatestTemp(station.readings));
+            station.latestTemperatureF = toTwoDecimalPlaces(StationAnalytics.getlatestTempF(station.readings));
             station.latestPressure = StationAnalytics.getlatestPressure(station.readings);
             station.latestwindSpeed = StationAnalytics.getlatestwindSpeed(station.readings);
             station.minPressureReading = StationAnalytics.getminPressure(station.readings);
@@ -51,7 +51,6 @@ public class StationCtrl extends Controller {
         }
         render("station.html", station);
     }
-
 
     public static void addReading(Long id, int code, double temperature, double windSpeed, int pressure, int windDirection) {
         Date date = new Date (System.currentTimeMillis());
@@ -83,5 +82,11 @@ public class StationCtrl extends Controller {
         redirect("/stations/" + id);
 
     }
+
+    private static double toTwoDecimalPlaces(double num){
+        return (int) (num *100 ) /100.0;
+    }
+
 }
+
 
