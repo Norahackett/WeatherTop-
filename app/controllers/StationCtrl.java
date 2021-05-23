@@ -22,8 +22,8 @@ public class StationCtrl extends Controller {
 
 
   //  public static void main(String[] args) {
-      ''  StationCtrl c = new StationCtrl();
-  ''  }
+      //''  StationCtrl c = new StationCtrl();
+  //''  }
 
     private static Object station;
 

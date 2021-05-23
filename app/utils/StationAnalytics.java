@@ -164,7 +164,7 @@ public class StationAnalytics {
     weatherIcons.put(700, "snowflake icon");
     weatherIcons.put(700, "poo storm icon");
     return weatherIcons.get(code);
-
+  }
   //public static String weatherIcon(int code) {
   // switch (code) {
   //   case 100:
