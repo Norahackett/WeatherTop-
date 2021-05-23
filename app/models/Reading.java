@@ -23,15 +23,11 @@ public class Reading extends Model {
     this.pressure = pressure;
     this.windDirection = windDirection;
     this.date = date;
-
   }
-
-
   //-------
   //getters
   //-----
   public int getCode() {
-
     return code;
   }
 
@@ -54,7 +50,6 @@ public class Reading extends Model {
   public Date getDate() {
     return date;
   }
-
   //-------
   //setters
   //-------

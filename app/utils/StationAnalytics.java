@@ -7,7 +7,7 @@ import java.util.List;
 
 public class StationAnalytics {
 
-  private static int WeatherIcon;
+  //private static int WeatherIcon;
 
   public static double getminTemp(List<Reading> readings) {
     Reading minTempReading = null;
@@ -162,7 +162,7 @@ public class StationAnalytics {
     weatherIcons.put(500, "cloud showers heavy icon");
     weatherIcons.put(600, "cloud rain icon");
     weatherIcons.put(700, "snowflake icon");
-    weatherIcons.put(700, "poo storm icon");
+    weatherIcons.put(800, "poo storm icon");
     return weatherIcons.get(code);
   }
 
@@ -181,7 +181,7 @@ public class StationAnalytics {
       case 600:
         return "Rain";
       case 700:
-        return "snow";
+        return "Snow";
       case 800:
         return "Thunder";
     }
