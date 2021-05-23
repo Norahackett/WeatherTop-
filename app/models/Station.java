@@ -38,6 +38,7 @@ public class Station extends Model {
   public double wind;
   public String windDirection;
   public String latestWeather;
+  public String latestWeatherCode;
   //public String latestWeather;
 
 

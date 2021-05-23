@@ -165,26 +165,27 @@ public class StationAnalytics {
     weatherIcons.put(700, "poo storm icon");
     return weatherIcons.get(code);
   }
-  //public static String weatherIcon(int code) {
-  // switch (code) {
-  //   case 100:
-  //  return "sun icon";
-  // case 200:
-  //    return "cloud icon";
-  //  case 300:
-  //    return "rain icon";
-  //  case 400:
-  //    return "Light Showers";
-  //  case 500:
-  //    return "Heavy Showerss";
-  // case 600:
-  //   return "Rain";
-  // case 700:
-  //   return "snow";
-  //case 800:
-  //return "Thunder";
-  //}
-  // return weatherIcon(code);
 
-  //}
+  public static String weatherCode(int code) {
+    switch (code) {
+      case 100:
+        return "Clear";
+      case 200:
+        return "Partial Clouds";
+      case 300:
+        return "Cloudy";
+      case 400:
+        return "Light Showers";
+      case 500:
+        return "Heavy Showerss";
+      case 600:
+        return "Rain";
+      case 700:
+        return "snow";
+      case 800:
+        return "Thunder";
+    }
+    return weatherCode(code);
+
+  }
 }
