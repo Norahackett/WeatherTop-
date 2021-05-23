@@ -72,11 +72,11 @@ public class StationAnalytics {
     return latestwindDirection;
   }
 
-  public static Reading getlatestPressure(List<Reading> readings) {
-    Reading latestPressure = null;
+  public static int getlatestPressure(List<Reading> readings) {
+    int latestPressure = 0;
 
     if (readings.size() > 0) {
-      latestPressure = readings.get(readings.size() - 1);
+      latestPressure = readings.get(readings.size() - 1).pressure;
     }
     return latestPressure;
   }

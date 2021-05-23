@@ -37,7 +37,7 @@ public class StationCtrl extends Controller {
             station.maxTempReading = StationAnalytics.getmaxTemp(station.readings);
             station.latestTemperature =StationAnalytics.getlatestTemp(station.readings);
             station.latestTemperatureF = StationAnalytics.getlatestTempF(station.readings);
-            station.latestPressure = StationAnalytics.getlatestPressure(station.readings).pressure;
+            station.latestPressure = StationAnalytics.getlatestPressure(station.readings);
             station.latestwindSpeed = StationAnalytics.getlatestwindSpeed(station.readings);
             station.minPressureReading = StationAnalytics.getminPressure(station.readings);
             station.maxPressureReading = StationAnalytics.getmaxPressure(station.readings);
